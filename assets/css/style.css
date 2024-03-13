@@ -1,19 +1,47 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+
+/* Set global variables for colors */
+:root {
+    --saffron: #F9A37B;
+    --white: #FAFAFA;
+    --green: #1A4223;
+    --navy: #06038D;
+    --black: #191919;
+}
+
+/* Overrides the default set by the browser */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', Arial, sans-serif;
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    display: flex;
 }
 
 header {
-    height: 10vh;
-    background-color: greenyellow;
+    min-height: 5vh;
+    background-color: var(--saffron);
+    padding: 0.5vh;
+    text-align: center;
 }
 
 main {
-    height: 80vh;
-    background-color: lightskyblue;
+    background-color: var(--white);
 }
 
 footer {
-    height: 10vh;
-    background-color: orange;
+    background-color: #1A4223;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding: 0.5vh;
 }

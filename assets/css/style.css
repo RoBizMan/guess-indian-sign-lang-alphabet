@@ -15,33 +15,82 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Laila', Arial, sans-serif;
 }
 
 body {
+    font-family: 'Laila', Arial, sans-serif;
     color: var(--black);
     background-color: var(--white);
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     flex-direction: column;
     display: flex;
 }
 
+/* Header */
 header {
     min-height: 5vh;
     background-color: var(--saffron);
     padding: 0.5vh;
     text-align: center;
+    border-radius: 0 0 2vw 2vw;
 }
 
+/* Main section */
 main {
     background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    color: var(--white);
+}
+
+/* Menu container */
+.box-container {
+    padding: 5vh;
+    height: 80vh;
+    width: 80vw;
+    background-color: var(--navy);
+    text-align: center;
+    border-radius: 2vh;
+}
+
+#welcome h2 {
+    margin-bottom: 2vh;
+}
+
+#welcome p {
+    margin-bottom: 2vh;
+}
+
+/* Button style */
+button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1vh;
+    border-radius: 3vh;
+    border: var(--black) solid 2px;
+    font-size: 1rem;
+    font-family: 'Laila', Arial, sans-serif;
+    cursor: pointer;
+    width: 250px;
+    margin-bottom: 2vh;
+}
+
+#wlc-btn {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
     background-color: #1A4223;
+    color: var(--white);
     bottom: 0;
     width: 100%;
     position: fixed;
     padding: 0.5vh;
+    border-radius: 2vw 2vw 0 0;
 }

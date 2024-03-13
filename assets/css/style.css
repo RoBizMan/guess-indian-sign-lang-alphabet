@@ -49,23 +49,37 @@ main {
 /* Menu container */
 .box-container {
     padding: 5vh;
-    height: 80vh;
+    height: auto;
     width: 80vw;
     background-color: var(--navy);
     text-align: center;
     border-radius: 2vh;
 }
 
-#welcome h2 {
+/* Main page */
+
+#welcome h2,
+#rules h2 {
     margin-bottom: 2vh;
 }
 
-#welcome p {
+#welcome p,
+#rules p {
     margin-bottom: 2vh;
+}
+
+#rules ul {
+    text-align: left;
+}
+
+#rules li {
+    text-align: left;
+    margin-bottom: 1vh;
 }
 
 /* Button style */
-button {
+#welcome button,
+#rules button {
     background-color: var(--white);
     color: var(--black);
     padding: 1vh;
@@ -78,11 +92,18 @@ button {
     margin-bottom: 2vh;
 }
 
-#wlc-btn {
+.wlc-btn,
+.rules-btn {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#welcome a,
+#rules a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 footer {

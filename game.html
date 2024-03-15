@@ -33,9 +33,30 @@
 
         <!-- Container that holds all elements of the quiz game together -->
         <div class="box-container">
+            <div class="game-question-timer">
+                <h2>Question: <span id="current-question"></span> /10</span></h2>
+                <h2>Timer: <span id="timer"></span>s</h2>
+                <a id="close-btn" href="index.html"><i class="fa-solid fa-x"></i></a>
+            </div>
 
+            <div class="question">
+                <h3>What does this sign represents?</h3>
+                <img id="sign-abc" src="assets/images/ind_sl_a.webp"
+                    alt="An image of Indian Sign Language fingerspelling alphabet">
+                <h3>Choose your answer:</h3>
+                <div id="answer-choice">
+                    <button class="answer-btn">Answer 1</button>
+                    <button class="answer-btn">Answer 2</button>
+                    <button class="answer-btn">Answer 3</button>
+                    <button class="answer-btn">Answer 4</button>
+                </div>
+            </div>
+
+            <div class="next-button">
+                <button class="next-btn">Next</button>
+            </div>
         </div>
-        </div>
+
     </main>
 
 

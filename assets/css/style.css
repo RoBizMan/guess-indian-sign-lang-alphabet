@@ -79,7 +79,8 @@ main {
 
 /* Button style */
 #welcome button,
-#rules button {
+#rules button,
+#answer-choice button {
     background-color: var(--white);
     color: var(--black);
     padding: 1vh;
@@ -92,18 +93,38 @@ main {
     margin-bottom: 2vh;
 }
 
-.wlc-btn,
-.rules-btn {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #welcome a,
 #rules a {
     text-decoration: none;
     color: var(--black);
+}
+
+.game-question-timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.game-question-timer h2 {
+    font-size: 1rem;
+}
+
+.game-question-timer a,
+.next-button a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.question h3 {
+    margin-bottom: 2vh;
+}
+
+.question img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 2vh;
 }
 
 footer {

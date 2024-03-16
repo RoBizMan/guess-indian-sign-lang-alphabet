@@ -172,9 +172,36 @@ function displayFirstQuestion() {
     randomQuestions();
     const currentQuestion = shuffledQuestions[currentQuesIndex];
     signImage.src = currentQuestion.image;
-    shuffleQuesAns(currentQuestion.answers);
     answerButtons.forEach((button, index) => {
         button.textContent = currentQuestion.answers[index];
+        // Reset the button color and enable the button
+        button.style.backgroundColor = "";
+        button.disabled = false;
+        // Check if the chosen answer is correct
+        button.onclick = () => {
+            clearInterval(timeStart); // Stop the timer
+            // Disable all answer buttons
+            answerButtons.forEach((btn) => {
+                if (btn) { // Check if the button exists
+                    btn.disabled = true;
+                }
+            });
+
+            if (button) { // Check if the button exists
+                if (button.textContent === currentQuestion.correctAnswer) {
+                    score++; // Increment the score
+                    button.style.backgroundColor = "green"; // Correct answer
+                } else {
+                    button.style.backgroundColor = "red"; // Incorrect answer
+                    // Find and highlight the correct answer
+                    const correctButton = answerButtons.find((btn) => btn.textContent === currentQuestion.correctAnswer);
+                    if (correctButton) { // Check if the correct button exists
+                        correctButton.style.backgroundColor = "green";
+                    }
+                }
+
+            }
+        };
     });
     currentQuesNo.textContent = currentQuestionNum;
     timer.textContent = timeStart;
@@ -209,9 +236,36 @@ function nextQuestion() {
     if (currentQuestionNum <= 10) {
         const currentQuestion = shuffledQuestions[currentQuesIndex];
         signImage.src = currentQuestion.image;
-        shuffleQuesAns(currentQuestion.answers);
         answerButtons.forEach((button, index) => {
             button.textContent = currentQuestion.answers[index];
+            // Reset the button color and enable the button
+            button.style.backgroundColor = "";
+            button.disabled = false;
+            // Check if the chosen answer is correct
+            button.onclick = () => {
+                clearInterval(timeStart); // Stop the timer
+                // Disable all answer buttons
+                answerButtons.forEach((btn) => {
+                    if (btn) { // Check if the button exists
+                        btn.disabled = true;
+                    }
+                });
+
+                if (button) { // Check if the button exists
+                    if (button.textContent === currentQuestion.correctAnswer) {
+                        score++; // Increment the score
+                        button.style.backgroundColor = "green"; // Correct answer
+                    } else {
+                        button.style.backgroundColor = "red"; // Incorrect answer
+                        // Find and highlight the correct answer
+                        const correctButton = answerButtons.find((btn) => btn.textContent === currentQuestion.correctAnswer);
+                        if (correctButton) { // Check if the correct button exists
+                            correctButton.style.backgroundColor = "green";
+                        }
+                    }
+
+                }
+            };
         });
         currentQuesNo.textContent = currentQuestionNum;
         nextButton.style.display = "none";

@@ -48,7 +48,7 @@ main {
 
 /* Menu container */
 .box-container {
-    padding: 5vh;
+    padding: 2.5vh;
     height: auto;
     width: 80vw;
     background-color: var(--navy);
@@ -58,7 +58,7 @@ main {
 
 .result-container {
     display: none;
-    padding: 5vh;
+    padding: 2.5vh;
     height: auto;
     width: 80vw;
     background-color: var(--navy);
@@ -169,6 +169,7 @@ footer {
     color: var(--white);
     bottom: 0;
     width: 100%;
+    min-height: 5vh;
     position: fixed;
     padding: 0.5vh;
     border-radius: 2vw 2vw 0 0;

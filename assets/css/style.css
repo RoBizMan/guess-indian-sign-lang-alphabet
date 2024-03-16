@@ -87,7 +87,8 @@ main {
     margin-bottom: 1vh;
 }
 
-.wlc-buttons {
+.wlc-buttons,
+.rules-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +112,7 @@ main {
 }
 
 .wlc-buttons a,
-#rules a {
+.rules-buttons a {
     background-color: var(--white);
     color: var(--black);
     padding: 1vh;

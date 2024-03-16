@@ -306,11 +306,15 @@ function endGame() {
 
     // Display the score in the result container
     resultContainer.innerHTML = `
-        <h1>Game Over!</h1>
-        <h2>Your score: ${score}/10</h2>
-        <h2>Percentage: ${scorePercentage}%</h2>
-        <a id="game-restart" onclick="location.reload()"><strong><i class="fa-solid fa-rotate-right"> Restart?</i></strong</a>
-        <a href="index.html"><strong><i class="fa-solid fa-house"> Home</i></strong></a>
+        <div class="display-result">    
+        <h2>Game Over!</h2>
+        <h3>Your score: ${score}/10</h3>
+        <h3>Percentage: ${scorePercentage}%</h3>
+        </div>
+        <div class="result-buttons">
+        <a onclick="location.reload()"><strong><i class="fa-solid fa-rotate-right"></i> Restart?</strong></a>
+        <a href="index.html"><strong><i class="fa-solid fa-house"></i> Home</strong></a>
+        </div>
     `;
 }
 

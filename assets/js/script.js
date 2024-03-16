@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // Array of questions
 const questions = [{
         image: "assets/images/ind_sl_a.webp",
@@ -160,9 +162,9 @@ function shuffleQuesAns() {
 // Shuffle and select 10 questions
 function randomQuestions() {
     while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)]
+        const random = questions[Math.floor(Math.random() * questions.length)];
         if (!shuffledQuestions.includes(random)) {
-            shuffledQuestions.push(random)
+            shuffledQuestions.push(random);
         }
     }
 }

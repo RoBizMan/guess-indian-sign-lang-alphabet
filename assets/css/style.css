@@ -87,6 +87,13 @@ main {
     margin-bottom: 1vh;
 }
 
+.wlc-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Button style */
 #answer-choice button {
     background-color: var(--white);
@@ -103,7 +110,7 @@ main {
     margin-bottom: 2vh;
 }
 
-#welcome a,
+.wlc-buttons a,
 #rules a {
     background-color: var(--white);
     color: var(--black);
@@ -114,8 +121,7 @@ main {
     font-family: 'Laila', Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
-    min-width: 15vw;
-    width: 20vw;
+    width: 50vw;
     margin-bottom: 2vh;
     text-decoration: none;
 }

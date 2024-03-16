@@ -56,6 +56,16 @@ main {
     border-radius: 2vh;
 }
 
+.result-container {
+    display: none;
+    padding: 5vh;
+    height: auto;
+    width: 80vw;
+    background-color: var(--navy);
+    text-align: center;
+    border-radius: 2vh;
+}
+
 /* Main page */
 
 #welcome h2,
@@ -78,8 +88,6 @@ main {
 }
 
 /* Button style */
-#welcome button,
-#rules button,
 #answer-choice button {
     background-color: var(--white);
     color: var(--black);
@@ -88,15 +96,28 @@ main {
     border: var(--black) solid 2px;
     font-size: 1rem;
     font-family: 'Laila', Arial, sans-serif;
+    font-weight: bold;
     cursor: pointer;
-    width: 250px;
+    min-width: 15vw;
+    width: 20vw;
     margin-bottom: 2vh;
 }
 
 #welcome a,
 #rules a {
-    text-decoration: none;
+    background-color: var(--white);
     color: var(--black);
+    padding: 1vh;
+    border-radius: 3vh;
+    border: var(--black) solid 2px;
+    font-size: 1rem;
+    font-family: 'Laila', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 15vw;
+    width: 20vw;
+    margin-bottom: 2vh;
+    text-decoration: none;
 }
 
 .game-question-timer {
@@ -111,7 +132,8 @@ main {
 }
 
 .game-question-timer a,
-.next-button a {
+.next-button a,
+#game-restart {
     text-decoration: none;
     color: var(--white);
     font-size: 2rem;

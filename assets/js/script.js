@@ -112,7 +112,7 @@ const questions = [{
     {
         image: "assets/images/ind_sl_w.webp",
         answers: ["X", "M", "W", "A"],
-        correctAnswer: "w"
+        correctAnswer: "W"
     },
     {
         image: "assets/images/ind_sl_x.webp",
@@ -137,6 +137,8 @@ const timer = document.getElementById("timer");
 const signImage = document.getElementById("sign-abc");
 const answerButtons = Array.from(document.getElementById("answer-choice").children);
 const nextButton = document.getElementById("game-next");
+const boxContainer = document.querySelector('.box-container');
+const resultContainer = document.querySelector('.result-container');
 
 // Assign variables
 
@@ -277,8 +279,28 @@ function nextQuestion() {
         nextButton.addEventListener("click", nextQuestion);
         startTimer();
     } else {
-        // End the quiz
+        endGame();
     }
+}
+
+function endGame() {
+    // Hide the game
+    boxContainer.style.display = 'none';
+
+    // Show the results
+    resultContainer.style.display = 'block';
+
+    // Calculate the score as a percentage
+    const scorePercentage = (score / 10) * 100;
+
+    // Display the score in the result container
+    resultContainer.innerHTML = `
+        <h1>Game Over!</h1>
+        <h2>Your score: ${score}/10</h2>
+        <h2>Percentage: ${scorePercentage}%</h2>
+        <a id="game-restart" onclick="location.reload()"><strong><i class="fa-solid fa-rotate-right"> Restart?</i></strong</a>
+        <a href="index.html"><strong><i class="fa-solid fa-house"> Home</i></strong></a>
+    `;
 }
 
 function startQuiz() {

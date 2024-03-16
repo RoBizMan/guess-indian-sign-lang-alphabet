@@ -130,3 +130,106 @@ const questions = [{
         correctAnswer: "Z"
     },
 ];
+
+// Select important elements and link to HTML
+const currentQuesNo = document.getElementById("current-question");
+const timer = document.getElementById("timer");
+const signImage = document.getElementById("sign-abc");
+const answerButtons = Array.from(document.getElementById("answer-choice").children);
+const nextButton = document.getElementById("game-next");
+
+// Assign variables
+
+let shuffledQuestions = [];
+let currentQuesIndex = 0;
+let timeStart = 15;
+let currentQuestionNum = 1;
+let score = 0;
+
+// Shuffle array using the Fisher-Yates algorithm
+function shuffleQuesAns() {
+    for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = questions[i];
+        questions[i] = questions[j];
+        questions[j] = temp;
+    }
+}
+
+// Shuffle and select 10 questions
+function randomQuestions() {
+    while (shuffledQuestions.length <= 9) {
+        const random = questions[Math.floor(Math.random() * questions.length)]
+        if (!shuffledQuestions.includes(random)) {
+            shuffledQuestions.push(random)
+        }
+    }
+}
+
+// Display the first question when the page loads
+function displayFirstQuestion() {
+    shuffleQuesAns(questions);
+    randomQuestions();
+    const currentQuestion = shuffledQuestions[currentQuesIndex];
+    signImage.src = currentQuestion.image;
+    shuffleQuesAns(currentQuestion.answers);
+    answerButtons.forEach((button, index) => {
+        button.textContent = currentQuestion.answers[index];
+    });
+    currentQuesNo.textContent = currentQuestionNum;
+    timer.textContent = timeStart;
+    nextButton.style.display = "none";
+    answerButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            nextButton.style.display = "block";
+        });
+    });
+    nextButton.addEventListener("click", nextQuestion);
+}
+
+// Function to start the timer
+function startTimer() {
+    let timeRemaining = 15;
+    document.getElementById("timer").textContent = timeRemaining;
+    timeStart = setInterval(() => {
+        timeRemaining--;
+        document.getElementById("timer").textContent = timeRemaining;
+        if (timeRemaining <= 0) {
+            clearInterval(timeStart);
+            nextQuestion();
+        }
+    }, 1000);
+}
+
+// Move to the next question when an user chooses an answer or when the time is up
+function nextQuestion() {
+    clearInterval(timeStart);
+    currentQuesIndex++;
+    currentQuestionNum++;
+    if (currentQuestionNum <= 10) {
+        const currentQuestion = shuffledQuestions[currentQuesIndex];
+        signImage.src = currentQuestion.image;
+        shuffleQuesAns(currentQuestion.answers);
+        answerButtons.forEach((button, index) => {
+            button.textContent = currentQuestion.answers[index];
+        });
+        currentQuesNo.textContent = currentQuestionNum;
+        nextButton.style.display = "none";
+        answerButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                nextButton.style.display = "block";
+            });
+        });
+        nextButton.addEventListener("click", nextQuestion);
+        startTimer();
+    } else {
+        // End the quiz
+    }
+}
+
+function startQuiz() {
+    displayFirstQuestion();
+    startTimer();
+}
+
+window.onload = startQuiz();

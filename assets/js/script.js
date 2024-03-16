@@ -141,7 +141,6 @@ const boxContainer = document.querySelector('.box-container');
 const resultContainer = document.querySelector('.result-container');
 
 // Assign variables
-
 let shuffledQuestions = [];
 let currentQuesIndex = 0;
 let timeStart = 15;
@@ -170,10 +169,15 @@ function randomQuestions() {
 
 // Display the first question when the page loads
 function displayFirstQuestion() {
-    shuffleQuesAns(questions);
+    shuffleQuesAns(questions); // Shuffle and select 10 out of 26 questions randomly
     randomQuestions();
-    const currentQuestion = shuffledQuestions[currentQuesIndex];
-    signImage.src = currentQuestion.image;
+    const currentQuestion = shuffledQuestions[currentQuesIndex]; // Select one of 10 questions in the current pool to display
+    signImage.src = currentQuestion.image; // Load an image from selected question displayed
+    signImage.onerror = function () {
+        console.error('Error loading image'); // In case an image cannot or failed to load
+        // Use the default image for the current question
+        this.src = shuffledQuestions[currentQuesIndex].defaultImage;
+    };
     answerButtons.forEach((button, index) => {
         button.textContent = currentQuestion.answers[index];
         // Reset the button color and enable the button
@@ -205,39 +209,44 @@ function displayFirstQuestion() {
             }
         };
     });
-    currentQuesNo.textContent = currentQuestionNum;
-    timer.textContent = timeStart;
-    nextButton.style.display = "none";
+    currentQuesNo.textContent = currentQuestionNum; // Display current question number on the top left
+    timer.textContent = timeStart; // Display timer
+    nextButton.style.display = "none"; // Hide the next question button
     answerButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            nextButton.style.display = "block";
+            nextButton.style.display = "block"; // Show the next question button once the answer has been selected
         });
     });
-    nextButton.addEventListener("click", nextQuestion);
+    nextButton.addEventListener("click", nextQuestion); // Move to the next question
 }
 
 // Function to start the timer
 function startTimer() {
-    let timeRemaining = 15;
+    let timeRemaining = 15; // Time countdown from 15 seconds
     document.getElementById("timer").textContent = timeRemaining;
     timeStart = setInterval(() => {
-        timeRemaining--;
-        document.getElementById("timer").textContent = timeRemaining;
+        timeRemaining--; // Start the time countdown on the page load
+        document.getElementById("timer").textContent = timeRemaining; // Display the countdown timer
         if (timeRemaining <= 0) {
-            clearInterval(timeStart);
-            nextQuestion();
+            clearInterval(timeStart); // Restart the countdown timer
+            nextQuestion(); // Move to the next question as the countdown timer runs out
         }
     }, 1000);
 }
 
 // Move to the next question when an user chooses an answer or when the time is up
 function nextQuestion() {
-    clearInterval(timeStart);
-    currentQuesIndex++;
-    currentQuestionNum++;
+    clearInterval(timeStart); // Restart the countdown timer
+    currentQuesIndex++; // Use up the current pool of 10 questions by 1
+    currentQuestionNum++; // Increase the current question number by 1
     if (currentQuestionNum <= 10) {
-        const currentQuestion = shuffledQuestions[currentQuesIndex];
-        signImage.src = currentQuestion.image;
+        const currentQuestion = shuffledQuestions[currentQuesIndex]; // Choose the random question out of the current pool of selected 10 questions
+        signImage.src = currentQuestion.image; // Display an image of selected question
+        signImage.onerror = function () {
+            console.error('Error loading image'); // In case an image cannot or failed to load
+            // Use the default image for the current question
+            this.src = shuffledQuestions[currentQuesIndex].defaultImage;
+        };
         answerButtons.forEach((button, index) => {
             button.textContent = currentQuestion.answers[index];
             // Reset the button color and enable the button
@@ -269,17 +278,17 @@ function nextQuestion() {
                 }
             };
         });
-        currentQuesNo.textContent = currentQuestionNum;
-        nextButton.style.display = "none";
+        currentQuesNo.textContent = currentQuestionNum; // Display current question number on the top left
+        nextButton.style.display = "none"; // Hide the next question button
         answerButtons.forEach((button) => {
             button.addEventListener("click", () => {
-                nextButton.style.display = "block";
+                nextButton.style.display = "block"; // Show the next question button once the answer has been selected
             });
         });
-        nextButton.addEventListener("click", nextQuestion);
-        startTimer();
+        nextButton.addEventListener("click", nextQuestion); // Move to the next question
+        startTimer(); // Execute the countdown timer of 15 seconds
     } else {
-        endGame();
+        endGame(); // The game ends once the game reaches 10th question and display the result
     }
 }
 
@@ -304,8 +313,8 @@ function endGame() {
 }
 
 function startQuiz() {
-    displayFirstQuestion();
-    startTimer();
+    displayFirstQuestion(); // Display the quiz
+    startTimer(); // The countdown timer of 15 seconds
 }
 
-window.onload = startQuiz();
+window.onload = startQuiz(); // The game quiz and the countdown timer begin on the page load

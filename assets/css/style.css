@@ -94,11 +94,10 @@ main {
     padding: 1vh;
     border-radius: 3vh;
     border: var(--black) solid 2px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Laila', Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
-    min-width: 20vw;
     width: 50vw;
     margin-bottom: 1vh;
 }
@@ -173,4 +172,36 @@ footer {
     position: fixed;
     padding: 0.5vh;
     border-radius: 2vw 2vw 0 0;
+}
+
+/* Media query for tablets and larger screens (768px and up) */
+@media screen and (min-width: 768px) {
+    #answer-choice {
+        display: grid;
+        grid-template-columns: 25vw 25vw;
+        grid-template-rows: 5vh 5vh;
+        column-gap: 2vw;
+        row-gap: 2vh;
+    }
+
+    #answer-choice button {
+        font-size: 1.5rem;
+        width: 25vw;
+    }
+}
+
+/* Media query for larger screen size, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #answer-choice {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #answer-choice button {
+        font-size: 2rem;
+        width: 15vw;
+    }
 }

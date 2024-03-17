@@ -145,7 +145,7 @@ const resultContainer = document.querySelector('.result-container');
 // Assign variables
 let shuffledQuestions = [];
 let currentQuesIndex = 0;
-let timeStart = 15;
+let timeStart = null;
 let currentQuestionNum = 1;
 let score = 0;
 
@@ -175,10 +175,17 @@ function displayFirstQuestion() {
     randomQuestions();
     const currentQuestion = shuffledQuestions[currentQuesIndex]; // Select one of 10 questions in the current pool to display
     signImage.src = currentQuestion.image; // Load an image from selected question displayed
+    // Add an onload event listener to the image
+    signImage.onload = function () {
+        // Start the timer when the image has loaded
+        startTimer();
+    };
     signImage.onerror = function () {
         console.error('Error loading image'); // In case an image cannot or failed to load
         // Use the default image for the current question
         this.src = shuffledQuestions[currentQuesIndex].defaultImage;
+        // Start the timer when the default image has loaded
+        startTimer();
     };
     answerButtons.forEach((button, index) => {
         button.textContent = currentQuestion.answers[index];
@@ -224,6 +231,10 @@ function displayFirstQuestion() {
 
 // Function to start the timer
 function startTimer() {
+    // Clear the existing interval if there is one
+    if (timeStart !== null) {
+        clearInterval(timeStart);
+    }
     let timeRemaining = 15; // Time countdown from 15 seconds
     document.getElementById("timer").textContent = timeRemaining;
     timeStart = setInterval(() => {
@@ -244,10 +255,17 @@ function nextQuestion() {
     if (currentQuestionNum <= 10) {
         const currentQuestion = shuffledQuestions[currentQuesIndex]; // Choose the random question out of the current pool of selected 10 questions
         signImage.src = currentQuestion.image; // Display an image of selected question
+        // Add an onload event listener to the image
+        signImage.onload = function () {
+            // Start the timer when the image has loaded
+            startTimer();
+        };
         signImage.onerror = function () {
             console.error('Error loading image'); // In case an image cannot or failed to load
             // Use the default image for the current question
             this.src = shuffledQuestions[currentQuesIndex].defaultImage;
+            // Start the timer when the default image has loaded
+            startTimer();
         };
         answerButtons.forEach((button, index) => {
             button.textContent = currentQuestion.answers[index];

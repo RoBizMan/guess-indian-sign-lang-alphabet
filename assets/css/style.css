@@ -196,6 +196,10 @@ main {
 }
 
 /* Contact form style */
+#contact-align {
+    text-align: left;
+}
+
 .text-input {
     color: var(--black);
     width: 100%;
@@ -303,6 +307,24 @@ footer p {
     .facts-buttons a {
         font-size: 1.5rem;
         width: 25vw;
+    }
+
+    /* Hover effect */
+    #answer-choice button:hover,
+    .result-buttons a:hover,
+    .rules-buttons a:hover,
+    .facts-buttons a:hover,
+    .wlc-buttons a:hover,
+    .submit-button button:hover {
+        background-color: yellow;
+        color: var(--black);
+    }
+
+    /* Hover effect on <i> icons */
+    .next-button i:hover,
+    #close-btn i:hover,
+    #close-button i:hover {
+        color: yellow;
     }
 
     /* Keep home page buttons in column list style and increase font size */

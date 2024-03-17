@@ -36,6 +36,10 @@ header {
     border-radius: 0 0 2vw 2vw;
 }
 
+header h1 {
+    font-size: 1.5rem;
+}
+
 /* Main section */
 main {
     background-color: var(--white);
@@ -48,7 +52,7 @@ main {
 
 /* Menu container */
 .box-container {
-    padding: 2.5vh;
+    padding: 5vh;
     height: auto;
     width: 80vw;
     background-color: var(--navy);
@@ -169,13 +173,18 @@ footer {
     bottom: 0;
     width: 100%;
     min-height: 5vh;
-    position: fixed;
+    margin-top: auto;
     padding: 0.5vh;
     border-radius: 2vw 2vw 0 0;
 }
 
 /* Media query for tablets and larger screens (768px and up) */
 @media screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
     #answer-choice {
         display: grid;
         grid-template-columns: 25vw 25vw;
@@ -184,7 +193,18 @@ footer {
         row-gap: 2vh;
     }
 
-    #answer-choice button {
+    .result-buttons,
+    .rules-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #answer-choice button,
+    .result-buttons a,
+    .rules-buttons a {
         font-size: 1.5rem;
         width: 25vw;
     }
@@ -192,7 +212,9 @@ footer {
 
 /* Media query for larger screen size, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    #answer-choice {
+
+    #answer-choice,
+    .result-buttons {
         display: flex;
         flex-direction: row;
         gap: 2vw;
@@ -202,6 +224,11 @@ footer {
 
     #answer-choice button {
         font-size: 2rem;
+        width: 15vw;
+    }
+
+    .result-buttons a {
+        font-size: 1.5rem;
         width: 15vw;
     }
 }

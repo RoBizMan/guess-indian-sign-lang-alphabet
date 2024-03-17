@@ -34,6 +34,7 @@ header {
     padding: 0.5vh;
     text-align: center;
     border-radius: 0 0 2vw 2vw;
+    box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.19), 0 1.2vh 1.2vh rgba(0, 0, 0, 0.23);
 }
 
 header h1 {
@@ -59,6 +60,7 @@ main {
     text-align: center;
     border-radius: 2vh;
     margin-bottom: 5vh;
+    box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.19), 0 1.2vh 1.2vh rgba(0, 0, 0, 0.23);
 }
 
 /* Result container & Thanks container only appear once JS event handler is executed */
@@ -71,6 +73,7 @@ main {
     background-color: var(--navy);
     text-align: center;
     border-radius: 2vh;
+    box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.19), 0 1.2vh 1.2vh rgba(0, 0, 0, 0.23);
 }
 
 /* Main page */
@@ -216,7 +219,7 @@ main {
 
 /* Footer style */
 footer {
-    background-color: #1A4223;
+    background-color: var(--green);
     color: var(--white);
     bottom: 0;
     width: 100%;

@@ -58,7 +58,7 @@ main {
     background-color: var(--navy);
     text-align: center;
     border-radius: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 
 .result-container {
@@ -194,7 +194,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     header {
-        height: 10vh;
+        height: 7.5vh;
     }
 
     header h1 {
@@ -250,7 +250,7 @@ footer {
     }
 
     footer {
-        height: 10vh;
+        height: 7.5vh;
     }
 }
 

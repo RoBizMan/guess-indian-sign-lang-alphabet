@@ -61,7 +61,8 @@ main {
     margin-bottom: 5vh;
 }
 
-.result-container {
+.result-container,
+.thanks-container {
     display: none;
     padding: 2.5vh;
     height: auto;
@@ -178,7 +179,9 @@ main {
 }
 
 .display-result h2,
-.display-result h3 {
+.display-result h3,
+.display-thanks-message h2,
+.display-thanks-message h3 {
     margin-bottom: 2vh;
 }
 
@@ -228,7 +231,8 @@ footer p {
     #facts h2,
     .game-question-timer h2,
     .display-result h2,
-    #contact-form h2 {
+    #contact-form h2,
+    .display-thanks-message h2 {
         font-size: 2rem;
     }
 
@@ -238,7 +242,8 @@ footer p {
     #facts li,
     .question h3,
     .display-result h3,
-    #contact-form label {
+    #contact-form label,
+    .display-thanks-message h3 {
         font-size: 1.5rem;
     }
 
@@ -288,7 +293,8 @@ footer p {
     #facts h2,
     .game-question-timer h2,
     .display-result h2,
-    #contact-form h2 {
+    #contact-form h2,
+    .display-thanks-message h2 {
         font-size: 2.5rem;
         margin-bottom: 2vh;
     }
@@ -299,7 +305,8 @@ footer p {
     #facts li,
     .question h3,
     .display-result h3,
-    #contact-form label {
+    #contact-form label,
+    .display-thanks-message h3 {
         font-size: 2rem;
         margin-bottom: 2vh;
     }

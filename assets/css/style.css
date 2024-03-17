@@ -138,6 +138,11 @@ main {
     text-decoration: none;
 }
 
+/* Push the next button down and away from answer buttons */
+.next-button a {
+    padding-top: 2vh;
+}
+
 /* Align buttons using flex */
 .wlc-buttons,
 .rules-buttons,
@@ -248,7 +253,7 @@ footer p {
         font-size: 2rem;
     }
 
-    /* Increase body font sizes */
+    /* Increase font sizes */
     #welcome p,
     #rules p,
     #rules li,
@@ -258,6 +263,11 @@ footer p {
     #contact-form label,
     .display-thanks-message h3 {
         font-size: 1.5rem;
+    }
+
+    /* Increase font size for next button */
+    .next-button i {
+        font-size: 3rem;
     }
 
     /* Increase image size for tablet or low screen resolution */
@@ -329,6 +339,11 @@ footer p {
     .display-thanks-message h3 {
         font-size: 2rem;
         margin-bottom: 2vh;
+    }
+
+    /* Increase font size for next button */
+    .next-button i {
+        font-size: 4rem;
     }
 
     /* Increase image size to the maximum for high quality for larger screen resolution */

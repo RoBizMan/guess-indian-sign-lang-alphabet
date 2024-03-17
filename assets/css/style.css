@@ -29,7 +29,7 @@ body {
 
 /* Header */
 header {
-    height: 5vh;
+    height: 7vh;
     background-color: var(--saffron);
     padding: 0.5vh;
     text-align: center;
@@ -113,7 +113,7 @@ main {
     font-family: 'Laila', Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
-    width: 50vw;
+    width: 40vw;
     margin-bottom: 1vh;
 }
 
@@ -172,8 +172,8 @@ main {
 }
 
 .question img {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     margin-bottom: 2vh;
 }
 
@@ -200,10 +200,16 @@ footer {
     color: var(--white);
     bottom: 0;
     width: 100%;
-    min-height: 5vh;
+    height: 3vh;
     margin-top: auto;
     padding: 0.5vh;
     border-radius: 2vw 2vw 0 0;
+}
+
+footer p {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5vh;
 }
 
 /* Media query for tablets and larger screens (768px and up) */
@@ -234,6 +240,11 @@ footer {
     .display-result h3,
     #contact-form label {
         font-size: 1.5rem;
+    }
+
+    .question img {
+        width: 175px;
+        height: 125px;
     }
 
     #answer-choice {
@@ -267,10 +278,6 @@ footer {
         font-size: 1.5rem;
         width: 45vw;
     }
-
-    footer {
-        height: 7.5vh;
-    }
 }
 
 /* Media query for larger screen size, 1200px and up) */
@@ -295,6 +302,11 @@ footer {
     #contact-form label {
         font-size: 2rem;
         margin-bottom: 2vh;
+    }
+
+    .question img {
+        width: 200px;
+        height: 150px;
     }
 
     #answer-choice,

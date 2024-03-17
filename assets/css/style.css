@@ -29,7 +29,7 @@ body {
 
 /* Header */
 header {
-    min-height: 5vh;
+    height: 5vh;
     background-color: var(--saffron);
     padding: 0.5vh;
     text-align: center;
@@ -58,6 +58,7 @@ main {
     background-color: var(--navy);
     text-align: center;
     border-radius: 2vh;
+    margin-bottom: 2vh;
 }
 
 .result-container {
@@ -73,7 +74,8 @@ main {
 /* Main page */
 
 #welcome h2,
-#rules h2 {
+#rules h2,
+#facts h2 {
     margin-bottom: 2vh;
 }
 
@@ -82,12 +84,20 @@ main {
     margin-bottom: 2vh;
 }
 
-#rules ul {
+#rules ol {
     text-align: left;
 }
 
 #rules li {
+    margin-bottom: 1vh;
+}
+
+#facts ul {
     text-align: left;
+    margin-bottom: 2vh;
+}
+
+#facts li {
     margin-bottom: 1vh;
 }
 
@@ -108,7 +118,8 @@ main {
 
 .wlc-buttons a,
 .rules-buttons a,
-.result-buttons a {
+.result-buttons a,
+.facts-buttons a {
     background-color: var(--white);
     color: var(--black);
     padding: 1vh;
@@ -126,6 +137,7 @@ main {
 .wlc-buttons,
 .rules-buttons,
 .result-buttons,
+.facts-buttons,
 #answer-choice {
     display: flex;
     flex-direction: column;
@@ -181,12 +193,17 @@ footer {
 /* Media query for tablets and larger screens (768px and up) */
 @media screen and (min-width: 768px) {
 
+    header {
+        height: 10vh;
+    }
+
     header h1 {
         font-size: 2.5rem;
     }
 
     #welcome h2,
     #rules h2,
+    #facts h2,
     .game-question-timer h2,
     .display-result h2 {
         font-size: 2rem;
@@ -195,6 +212,7 @@ footer {
     #welcome p,
     #rules p,
     #rules li,
+    #facts li,
     .question h3,
     .display-result h3 {
         font-size: 1.5rem;
@@ -209,7 +227,8 @@ footer {
     }
 
     .result-buttons,
-    .rules-buttons {
+    .rules-buttons,
+    .facts-buttons {
         display: flex;
         flex-direction: row;
         gap: 2vw;
@@ -219,7 +238,8 @@ footer {
 
     #answer-choice button,
     .result-buttons a,
-    .rules-buttons a {
+    .rules-buttons a,
+    .facts-buttons a {
         font-size: 1.5rem;
         width: 25vw;
     }
@@ -228,6 +248,10 @@ footer {
         font-size: 1.5rem;
         width: 45vw;
     }
+
+    footer {
+        height: 10vh;
+    }
 }
 
 /* Media query for larger screen size, 1200px and up) */
@@ -235,6 +259,7 @@ footer {
 
     #welcome h2,
     #rules h2,
+    #facts h2,
     .game-question-timer h2,
     .display-result h2 {
         font-size: 2.5rem;
@@ -244,6 +269,7 @@ footer {
     #welcome p,
     #rules p,
     #rules li,
+    #facts li,
     .question h3,
     .display-result h3 {
         font-size: 2rem;

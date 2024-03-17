@@ -159,10 +159,12 @@ function shuffleQuesAns() {
     }
 }
 
-// Shuffle and select 10 questions
+// Shuffle and select 10 questions randomly
 function randomQuestions() {
+    // Take a random question from array to shuffledQuestions until it contains 10 questions to create a questions pool for the game quiz
     while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)];
+        const random = questions[Math.floor(Math.random() * questions.length)]; // Select a random question from a questions pool
+        // Push an array to shuffledQuestions to ensure a questions pool contains 10 questions
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random);
         }
@@ -330,8 +332,8 @@ function endGame() {
         <h3>Percentage: ${scorePercentage}%</h3>
         </div>
         <div class="result-buttons">
-        <a onclick="location.reload()"><strong><i class="fa-solid fa-rotate-right"></i> Restart?</strong></a>
-        <a href="index.html"><strong><i class="fa-solid fa-house"></i> Home</strong></a>
+        <a onclick="location.reload()" aria-label="Restart the game by reloading the page"><strong><i class="fa-solid fa-rotate-right"></i> Restart?</strong></a>
+        <a href="index.html" aria-label="Return to the home page"><strong><i class="fa-solid fa-house"></i> Home</strong></a>
         </div>
     `;
 }

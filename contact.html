@@ -25,16 +25,18 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1>Guess ISL alphabet!</h1>
     </header>
 
     <main>
-        <!-- Welcome screen page -->
+        <!-- Contact container -->
         <div class="box-container">
             <div class="contact">
                 <section id="contact-us">
-                    <form id="contact-form" action="confirmation.html">
+                    <!-- Contact form -->
+                    <form id="contact-form">
                         <div class="contact-head">
                             <h2>Report a Bug <i class="fa-solid fa-bug"></i></h2>
                             <a id="close-button" href="index.html"><i class="fa-solid fa-x"></i></a>
@@ -53,7 +55,9 @@
                         <textarea name="message" id="message" class="text-input" placeholder="Write your message"
                             required></textarea>
                         <div class="submit-button">
-                            <button type="submit" id="submit-msg-button"><i class="fa-solid fa-paper-plane"></i>
+                            <button type="submit" id="submit-msg-button"
+                                aria-label="Submit your contact form to the site owner"><i
+                                    class="fa-solid fa-paper-plane"></i>
                                 Submit!</button>
                         </div>
                     </form>
@@ -61,11 +65,11 @@
             </div>
         </div>
 
-        <!-- Thank you message container -->
+        <!-- Thank you message container appears once the form is submitted as this is done by JS event handler -->
         <div class="thanks-container"></div>
     </main>
 
-
+    <!-- Footer -->
     <footer>
         <!-- Copyright -->
         <p>&copy; Guess ISL Alphabet</p>

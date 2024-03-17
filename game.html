@@ -25,43 +25,48 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1>Guess ISL alphabet!</h1>
     </header>
 
     <main>
-
         <!-- Container that holds all elements of the quiz game together -->
         <div class="box-container">
             <div class="game-question-timer">
-                <h2>Question: <span id="current-question"></span> /10</span></h2>
+                <h2>Question: <span id="current-question"></span> /10</h2>
                 <h2>Timer: <span id="timer"></span>s</h2>
-                <a id="close-btn" href="index.html"><i class="fa-solid fa-x"></i></a>
+                <a id="close-btn" href="index.html" aria-label="Quit the game and return to the home page"><i
+                        class="fa-solid fa-x"></i></a>
             </div>
 
+            <!-- Game element -->
             <div class="question">
                 <h3>What does this sign represents?</h3>
                 <img id="sign-abc" src="assets/images/ind_sl_a.webp"
                     alt="An image of Indian Sign Language fingerspelling alphabet">
                 <h3>Choose your answer:</h3>
+                <!-- Answer buttons -->
                 <div id="answer-choice">
-                    <button id="ans-btn-1"></button>
-                    <button id="ans-btn-2"></button>
-                    <button id="ans-btn-3"></button>
-                    <button id="ans-btn-4"></button>
+                    <button id="ans-btn-1" aria-label="Answer button one"></button>
+                    <button id="ans-btn-2" aria-label="Answer button two"></button>
+                    <button id="ans-btn-3" aria-label="Answer button three"></button>
+                    <button id="ans-btn-4" aria-label="Answer button four"></button>
                 </div>
             </div>
 
+            <!-- Next button appears once an user click any of answer button as this is done by JS event handler -->
             <div class="next-button">
-                <a id="game-next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a id="game-next" aria-label="The next button to advance to the next question"><i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
 
+        <!-- Result container appears upon the completion of the game and this is done by JS event handler -->
         <div class="result-container"></div>
-
     </main>
 
-
+    <!-- Footer -->
     <footer>
         <!-- Copyright -->
         <p>&copy; Guess ISL Alphabet</p>

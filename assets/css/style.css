@@ -61,6 +61,7 @@ main {
     margin-bottom: 5vh;
 }
 
+/* Result container & Thanks container only appear once JS event handler is executed */
 .result-container,
 .thanks-container {
     display: none;
@@ -73,33 +74,33 @@ main {
 }
 
 /* Main page */
-
 #welcome h2,
 #rules h2,
 #facts h2 {
     margin-bottom: 2vh;
 }
 
+/* Give each line a margin bottom of 2vh */
 #welcome p,
 #rules p {
     margin-bottom: 2vh;
 }
 
+/* Align list to left */
 #rules ol {
     text-align: left;
 }
 
-#rules li {
+/* Give each list a margin bottom of 1vh */
+#rules li,
+#facts li {
     margin-bottom: 1vh;
 }
 
+/* Push unordered list to left and give each list a margin bottom of 2vh */
 #facts ul {
     text-align: left;
     margin-bottom: 2vh;
-}
-
-#facts li {
-    margin-bottom: 1vh;
 }
 
 /* Button style */
@@ -118,6 +119,7 @@ main {
     margin-bottom: 1vh;
 }
 
+/* Style clickable buttons */
 .wlc-buttons a,
 .rules-buttons a,
 .result-buttons a,
@@ -136,6 +138,7 @@ main {
     text-decoration: none;
 }
 
+/* Align buttons using flex */
 .wlc-buttons,
 .rules-buttons,
 .result-buttons,
@@ -147,6 +150,7 @@ main {
     align-items: center;
 }
 
+/* Position heading and buttons to centered and spaced around */
 .game-question-timer,
 .contact-head {
     display: flex;
@@ -155,10 +159,12 @@ main {
     margin-bottom: 2vh;
 }
 
+/* Style game timer */
 .game-question-timer h2 {
     font-size: 1rem;
 }
 
+/* Remove text deocration and make font size inside <a> button bigger */
 .game-question-timer a,
 .next-button a,
 .contact-head a,
@@ -168,16 +174,15 @@ main {
     font-size: 2rem;
 }
 
-.question h3 {
-    margin-bottom: 2vh;
-}
-
+/* Reduce image size for mobile version */
 .question img {
     width: 150px;
     height: 100px;
     margin-bottom: 2vh;
 }
 
+/* Give each line a margin bottom of 2vh */
+.question h3,
 .display-result h2,
 .display-result h3,
 .display-thanks-message h2,
@@ -185,6 +190,7 @@ main {
     margin-bottom: 2vh;
 }
 
+/* Contact form style */
 .text-input {
     color: var(--black);
     width: 100%;
@@ -192,12 +198,14 @@ main {
     height: 3vh;
 }
 
+/* Remove the ability to resize the message box */
 #message {
     min-height: 10vh;
     resize: none;
     margin-bottom: 2vh;
 }
 
+/* Footer style */
 footer {
     background-color: #1A4223;
     color: var(--white);
@@ -209,6 +217,7 @@ footer {
     border-radius: 2vw 2vw 0 0;
 }
 
+/* Style footer paragraph */
 footer p {
     color: var(--white);
     text-align: center;
@@ -218,14 +227,17 @@ footer p {
 /* Media query for tablets and larger screens (768px and up) */
 @media screen and (min-width: 768px) {
 
+    /* Increase height of header */
     header {
         height: 7.5vh;
     }
 
+    /* Increase header font size */
     header h1 {
         font-size: 2.5rem;
     }
 
+    /* Increase heading font sizes */
     #welcome h2,
     #rules h2,
     #facts h2,
@@ -236,6 +248,7 @@ footer p {
         font-size: 2rem;
     }
 
+    /* Increase body font sizes */
     #welcome p,
     #rules p,
     #rules li,
@@ -247,11 +260,13 @@ footer p {
         font-size: 1.5rem;
     }
 
+    /* Increase image size for tablet or low screen resolution */
     .question img {
         width: 175px;
         height: 125px;
     }
 
+    /* Make answer buttons grid for tablet or low screen resolution */
     #answer-choice {
         display: grid;
         grid-template-columns: 25vw 25vw;
@@ -260,6 +275,7 @@ footer p {
         row-gap: 2vh;
     }
 
+    /* Move buttons to row instead of column list */
     .result-buttons,
     .rules-buttons,
     .facts-buttons {
@@ -270,6 +286,7 @@ footer p {
         align-items: center;
     }
 
+    /* Set width limit to accommodate flex-direction of row and increase font size */
     #answer-choice button,
     .result-buttons a,
     .rules-buttons a,
@@ -278,6 +295,7 @@ footer p {
         width: 25vw;
     }
 
+    /* Keep home page buttons in column list style and increase font size */
     .wlc-buttons a,
     .submit-button button {
         font-size: 1.5rem;
@@ -288,6 +306,7 @@ footer p {
 /* Media query for larger screen size, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
+    /* Increase height of header */
     #welcome h2,
     #rules h2,
     #facts h2,
@@ -299,6 +318,7 @@ footer p {
         margin-bottom: 2vh;
     }
 
+    /* Increase heading font sizes */
     #welcome p,
     #rules p,
     #rules li,
@@ -311,11 +331,13 @@ footer p {
         margin-bottom: 2vh;
     }
 
+    /* Increase image size to the maximum for high quality for larger screen resolution */
     .question img {
         width: 200px;
         height: 150px;
     }
 
+    /* Move buttons to row instead of column list */
     #answer-choice,
     .result-buttons {
         display: flex;
@@ -325,19 +347,19 @@ footer p {
         align-items: center;
     }
 
+    /* Set width limit to accommodate flex-direction of row and increase font size */
     #answer-choice button {
         font-size: 2rem;
         width: 15vw;
     }
 
     .result-buttons a {
-        font-size: 1.5rem;
         width: 15vw;
     }
 
+    /* Increase font size for home page and submit buttons */
     .wlc-buttons a,
     .submit-button button {
         font-size: 2rem;
-        width: 45vw;
     }
 }

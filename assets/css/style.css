@@ -182,7 +182,22 @@ footer {
 @media screen and (min-width: 768px) {
 
     header h1 {
+        font-size: 2.5rem;
+    }
+
+    #welcome h2,
+    #rules h2,
+    .game-question-timer h2,
+    .display-result h2 {
         font-size: 2rem;
+    }
+
+    #welcome p,
+    #rules p,
+    #rules li,
+    .question h3,
+    .display-result h3 {
+        font-size: 1.5rem;
     }
 
     #answer-choice {
@@ -208,10 +223,32 @@ footer {
         font-size: 1.5rem;
         width: 25vw;
     }
+
+    .wlc-buttons a {
+        font-size: 1.5rem;
+        width: 45vw;
+    }
 }
 
 /* Media query for larger screen size, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
+    #welcome h2,
+    #rules h2,
+    .game-question-timer h2,
+    .display-result h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2vh;
+    }
+
+    #welcome p,
+    #rules p,
+    #rules li,
+    .question h3,
+    .display-result h3 {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
 
     #answer-choice,
     .result-buttons {
@@ -230,5 +267,10 @@ footer {
     .result-buttons a {
         font-size: 1.5rem;
         width: 15vw;
+    }
+
+    .wlc-buttons a {
+        font-size: 2rem;
+        width: 45vw;
     }
 }

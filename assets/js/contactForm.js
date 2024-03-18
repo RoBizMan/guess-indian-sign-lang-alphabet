@@ -32,7 +32,7 @@ contactForm.addEventListener('submit', function (event) {
 
         // When the countdown reaches 0, redirect to the home page and clear the interval
         if (countdown < 0) {
-            window.location.href = '/../index.html';
+            window.location.href = 'index.html';
             clearInterval(countdownInterval);
         }
     }, 1000);

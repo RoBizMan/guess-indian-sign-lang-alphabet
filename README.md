@@ -151,3 +151,42 @@ Arial and sans-serif were used as step-back fonts if Hind Vadodara failed to loa
 - As a returning user, I want to see new and varied questions each time, so that my learning continues to be challenged.
 
 - As a returning user, I want to be able to share my scores, so that I can challenge my friends to beat my score.
+
+## Wireframes
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+
+I have used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+<details>
+<summary>Mobile Wireframes</summary>
+
+![screenshot](documentation/mobile_wireframe_home.png)
+![screenshot](documentation/mobile_wireframe_rules.png)
+![screenshot](documentation/mobile_wireframe_game.png)
+![screenshot](documentation/mobile_wireframe_facts.png)
+![screenshot](documentation/mobile_wireframe_contact.png)
+</details>
+
+### Tablet Wireframes
+<details>
+<summary>Tablet Wireframes</summary>
+
+![screenshot](documentation/tablet_wireframe_home.png)
+![screenshot](documentation/tablet_wireframe_rules.png)
+![screenshot](documentation/tablet_wireframe_game.png)
+![screenshot](documentation/tablet_wireframe_facts.png)
+![screenshot](documentation/tablet_wireframe_contact.png)
+</details>
+
+### Desktop Wireframes
+<details>
+<summary>Desktop Wireframes</summary>
+
+![screenshot](documentation/desktop_wireframe_home.png)
+![screenshot](documentation/desktop_wireframe_rules.png)
+![screenshot](documentation/desktop_wireframe_game.png)
+![screenshot](documentation/desktop_wireframe_facts.png)
+![screenshot](documentation/desktop_wireframe_contact.png)
+</details>

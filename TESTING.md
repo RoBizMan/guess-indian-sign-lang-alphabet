@@ -42,3 +42,14 @@ I have tested my deployed project on multiple browsers to check for compatibilit
 | Chrome | ![screenshot](documentation/chrome_home.png) | ![screenshot](documentation/chrome_rules.png) | ![screenshot](documentation/chrome_game.png) | ![screenshot](documentation/chrome_facts.png) | ![screenshot](documentation/chrome_contact.png) | Works as expected |
 | Mozilla | ![screenshot](documentation/mozilla_home.png) | ![screenshot](documentation/mozilla_rules.png) | ![screenshot](documentation/mozilla_game.png) | ![screenshot](documentation/mozilla_facts.png) | ![screenshot](documentation/mozilla_contact.png) | Works as expected |
 | Safari | ![screenshot](documentation/safari_home.png) | ![screenshot](documentation/safari_rules.png) | ![screenshot](documentation/safari_game.png) | ![screenshot](documentation/safari_facts.png) | ![screenshot](documentation/safari_contact.png) | Works as expected |
+
+## Responsiveness
+
+I have tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | Rules | Game | Facts | Contact | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| iPhone 14 Pro Max | ![screenshot](documentation/iphone_home.png) | ![screenshot](documentation/iphone_rules.png) | ![screenshot](documentation/iphone_game.png) | ![screenshot](documentation/iphone_facts.png) | ![screenshot](documentation/iphone_contact.png) | Works as expected |
+| Samsung Galaxy Tab S4 | ![screenshot](documentation/galaxyts4_home.png) | ![screenshot](documentation/galaxyts4_rules.png) | ![screenshot](documentation/galaxyts4_game.png) | ![screenshot](documentation/galaxyts4_facts.png) | ![screenshot](documentation/galaxyts4_contact.png) | Works as expected |
+| iPad Air | ![screenshot](documentation/air_home.png) | ![screenshot](documentation/air_rules.png) | ![screenshot](documentation/air_game.png) | ![screenshot](documentation/air_facts.png) | ![screenshot](documentation/air_contact.png) | Works as expected |
+| Google Pixel 7 | ![screenshot](documentation/pixel7_home.png) | ![screenshot](documentation/pixel7_rules.png) | ![screenshot](documentation/pixel7_game.png) | ![screenshot](documentation/pixel7_facts.png) | ![screenshot](documentation/pixel7_contact.png) | Works as expected |

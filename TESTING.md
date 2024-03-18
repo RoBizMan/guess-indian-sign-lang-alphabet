@@ -76,3 +76,20 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | As a returning user, I want to find resources to learn ISL further. | ![screenshot](documentation/story_resource.png) |
 | - As a returning user, I want to see new and varied questions each time, so that my learning continues to be challenged. | ![screenshot](documentation/story_random_ques1.png) ![screenshot](documentation/story_random_ques2.png) |
 | As a returning user, I want to be able to share my scores, so that I can challenge my friends to beat my score. | ![screenshot](documentation/story_result.png) |
+
+## Bugs
+
+- Bug #1
+
+![screenshot](documentation/bug1.png)
+
+- Bug #2
+
+![screenshot](documentation/bug2.png)
+
+- Bug #3
+![screenshot](documentation/bug3.png)
+
+## Unfixed Bugs
+
+There are no remaining bugs that I am aware of.

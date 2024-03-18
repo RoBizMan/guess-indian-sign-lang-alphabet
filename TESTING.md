@@ -32,3 +32,13 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | --- | --- | --- | --- |
 | assets | contactForm.js | ![screenshot](documentation/js_valid_contact.png) |
 | assets | script.js | ![screenshot](documentation/js_valid_script.png) |
+
+## Browser Compatibility
+
+I have tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Home | Explore | Travel | Contact | Confirmation | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/chrome_home.png) | ![screenshot](documentation/chrome_rules.png) | ![screenshot](documentation/chrome_game.png) | ![screenshot](documentation/chrome_facts.png) | ![screenshot](documentation/chrome_contact.png) | Works as expected |
+| Mozilla | ![screenshot](documentation/mozilla_home.png) | ![screenshot](documentation/mozilla_rules.png) | ![screenshot](documentation/mozilla_game.png) | ![screenshot](documentation/mozilla_facts.png) | ![screenshot](documentation/mozilla_contact.png) | Works as expected |
+| Safari | ![screenshot](documentation/safari_home.png) | ![screenshot](documentation/safari_rules.png) | ![screenshot](documentation/safari_game.png) | ![screenshot](documentation/safari_facts.png) | ![screenshot](documentation/safari_contact.png) | Works as expected |

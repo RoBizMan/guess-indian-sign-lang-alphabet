@@ -53,3 +53,15 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | Samsung Galaxy Tab S4 | ![screenshot](documentation/galaxyts4_home.png) | ![screenshot](documentation/galaxyts4_rules.png) | ![screenshot](documentation/galaxyts4_game.png) | ![screenshot](documentation/galaxyts4_facts.png) | ![screenshot](documentation/galaxyts4_contact.png) | Works as expected |
 | iPad Air | ![screenshot](documentation/air_home.png) | ![screenshot](documentation/air_rules.png) | ![screenshot](documentation/air_game.png) | ![screenshot](documentation/air_facts.png) | ![screenshot](documentation/air_contact.png) | Works as expected |
 | Google Pixel 7 | ![screenshot](documentation/pixel7_home.png) | ![screenshot](documentation/pixel7_rules.png) | ![screenshot](documentation/pixel7_game.png) | ![screenshot](documentation/pixel7_facts.png) | ![screenshot](documentation/pixel7_contact.png) | Works as expected |
+
+## Lighthouse Audit
+
+I have tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse_home_mobile.png) | ![screenshot](documentation/lighthouse_home_desktop.png) | Some minor performance warnings |
+| Rules | ![screenshot](documentation/lighthouse_rules_mobile.png) | ![screenshot](documentation/lighthouse_rules_desktop.png) | Some minor warnings |
+| Game | ![screenshot](documentation/lighthouse_game_mobile.png) | ![screenshot](documentation/lighthouse_game_desktop.png) | Some minor performance warnings and major performance warnings |
+| Facts | ![screenshot](documentation/lighthouse_facts_mobile.png) | ![screenshot](documentation/lighthouse_facts_desktop.png) | Some minor warnings and major performance warnings |
+| Contact | ![screenshot](documentation/lighthouse_contact_mobile.png) | ![screenshot](documentation/lighthouse_contact_desktop.png) | Some minor warnings |

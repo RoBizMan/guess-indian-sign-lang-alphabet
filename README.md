@@ -56,3 +56,81 @@ Discover a fun and interactive way to master the ISL fingerspelling alphabet thr
     1. [Media](#media)
     1. [Acknowledgements](#acknowledgements)
 ***
+
+## UX
+
+In this project, I follow the Five Planes of User Experience model invented by Jesse James Garrett.
+
+### Five Planes of User Experience
+
+This model aids in transforming from abstract ideas, such as creating objectives of the project and identifying the user needs, to concrete concepts, such as assembling visual elements together to produce the visual design of the idea to meet the project's objectives and users' needs.
+
+#### The Strategy Plane
+
+Indian Sign Language (ISL) has recently been brought to the attention of people in India. The Prime Minister of India, Narendra Modi, made it part of the school curriculum. Also, Narendra Modi launched the first official ISL dictionary, which consists of 4,000 signs. They have launched the third edition of ISL, bringing the total number of signs to 10,000 so far.
+
+Users may look for ISL gamification. Therefore, the main objective of this project is to create a gamification website that encourages users to learn and practice ISL fingerspelling alphabet as a first step in learning ISL. Also, a gamification website includes an external resource for users to learn ISL further. Thus, this project aims to meet the business and the user's needs.
+
+#### The Scope Plane
+
+Based on the main objective and goals set out in the Strategy Plane, these requirements for developing the website are broken down into two categories:
+
+##### Content requirements:
+- Gamification ISL fingerspelling alphabet
+- Facts about ISL
+- External resources to learn ISL further
+
+##### Functionality requirements:
+- Easy and interactive gamification
+- Easy to navigate the gamification website
+- Provide an external link to get more resources for learning ISL
+
+#### The Structure Plane
+
+The requirements outlined in the Scope Plane were then used to create a structure for the website. A site map below shows how users can navigate the website easily.
+
+![screenshot](documentation/structure_plane.png)
+
+#### The Skeleton Plane
+
+Please refer to the [Wireframes](#Wireframes) section for more detailed wireframing.
+
+#### The Surface Plane
+
+[Click here to view the live site.](https://robizman.github.io/guess-indian-sign-lang-alphabet)
+
+### Colour Scheme
+
+I used [Color Hunt](https://colorhunt.co/palette/f9a37b06038dfafafa1a4223#justCreated) to generate my colour palette
+
+![screenshot](documentation/colour_palette.png)
+
+The colour palette represents the flag of India. However, it was crucial for the colour palette to pass the minimum colour contrast set by the Web Content Accessibility Guide (WCAG). The colour palette was tested using [Coolors' Color Contrast Checker](https://coolors.co/contrast-checker/). The result below shows that these colours passed the minimum WCAG contrast ratio.
+
+<details>
+<summary>Color Contrast Checker</summary>
+
+![screenshot](documentation/orange_black.png)
+![screenshot](documentation/blue_white.png)
+![screenshot](documentation/blue_yellow.png)
+![screenshot](documentation/green_white.png)
+</details>
+
+<br>
+I have used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
+
+```css
+:root {
+    --saffron: #F9A37B;
+    --white: #FAFAFA;
+    --green: #1A4223;
+    --navy: #06038D;
+    --black: #191919;
+}
+```
+
+### Typography
+
+Laila was chosen as the main font for the whole website. The font was imported from Google Fonts. The font makes the website look and feel cartoony and fun.
+
+Arial and sans-serif were used as step-back fonts if Hind Vadodara failed to load on the website.

@@ -1,0 +1,17 @@
+# TESTING
+
+Return back to the [README.md](README.md) file.
+
+## Code Validation
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2Findex.html) | ![screenshot](documentation/html_valid_index.png) | Pass: No error found |
+| Rules | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2Frules.html) | ![screenshot](documentation/html_valid_rules.png) | Pass: No error found |
+| Game | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2Fgame.html) | ![screenshot](documentation/html_valid_game.png) | Pass: No error found |
+| Facts | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2Ffacts.html) | ![screenshot](documentation/html_valid_facts.png) | Pass; No error found |
+| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2Fcontact.html) | ![screenshot](documentation/html_valid_contact.png) | Pass; No error found |

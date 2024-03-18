@@ -65,3 +65,14 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | Game | ![screenshot](documentation/lighthouse_game_mobile.png) | ![screenshot](documentation/lighthouse_game_desktop.png) | Some minor performance warnings and major performance warnings |
 | Facts | ![screenshot](documentation/lighthouse_facts_mobile.png) | ![screenshot](documentation/lighthouse_facts_desktop.png) | Some minor warnings and major performance warnings |
 | Contact | ![screenshot](documentation/lighthouse_contact_mobile.png) | ![screenshot](documentation/lighthouse_contact_desktop.png) | Some minor warnings |
+
+## User Story Testing
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new user, I want to understand how to play the game, so that I can start learning ISL fingerspelling. | ![screenshot](documentation/story_rules.png) |
+| - As a new user, I want to be able to see the immediate result after selecting the answer. | ![screenshot](documentation/story_answers.png) |
+| As a new user, I want to be able to replay the game, so that I can practice and improve my skills. | ![screenshot](documentation/story_restart.png) |
+| As a returning user, I want to find resources to learn ISL further. | ![screenshot](documentation/story_resource.png) |
+| - As a returning user, I want to see new and varied questions each time, so that my learning continues to be challenged. | ![screenshot](documentation/story_random_ques1.png) ![screenshot](documentation/story_random_ques2.png) |
+| As a returning user, I want to be able to share my scores, so that I can challenge my friends to beat my score. | ![screenshot](documentation/story_result.png) |

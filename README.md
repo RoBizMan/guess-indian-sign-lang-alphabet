@@ -134,3 +134,20 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 Laila was chosen as the main font for the whole website. The font was imported from Google Fonts. The font makes the website look and feel cartoony and fun.
 
 Arial and sans-serif were used as step-back fonts if Hind Vadodara failed to load on the website.
+
+## User Stories
+### New Site Users
+
+- As a new user, I want to understand how to play the game, so that I can start learning ISL fingerspelling.
+
+- As a new user, I want to be able to see the result, so that I can track my performance.
+
+- As a new user, I want to be able to replay the game, so that I can practice and improve my skills.
+
+### Returning Site Users
+
+- As a returning user, I want to find resources to learn ISL further.
+
+- As a returning user, I want to see new and varied questions each time, so that my learning continues to be challenged.
+
+- As a returning user, I want to be able to share my scores, so that I can challenge my friends to beat my score.

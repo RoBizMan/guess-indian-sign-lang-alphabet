@@ -140,7 +140,7 @@ Arial and sans-serif were used as step-back fonts if Hind Vadodara failed to loa
 
 - As a new user, I want to understand how to play the game, so that I can start learning ISL fingerspelling.
 
-- As a new user, I want to be able to see the result, so that I can track my performance.
+- As a new user, I want to be able to see the immediate result after selecting the answer.
 
 - As a new user, I want to be able to replay the game, so that I can practice and improve my skills.
 

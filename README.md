@@ -255,3 +255,17 @@ The Contact page features a contact form for users to input their first name, su
 - Add fingerspelling numbers to the game quiz.
 - Add basic signs to the game quiz.
 - Create visual appealing modals to reduce number of pages needed to go through.
+
+## Tools & Technologies Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [GitHub Copilot](https://github.com/features/copilot) used for debugging codes.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [CodePen](https://codepen.io/) used for toying and testing with CSS design before committing changes to the actual website design.

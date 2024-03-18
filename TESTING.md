@@ -23,3 +23,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | style.css | [Jigsaw](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Frobizman.github.io%2Fguess-indian-sign-lang-alphabet%2F&usermedium=all&vextwarning=&warning=1) | ![screenshot](documentation/css_validation.png) | Pass: No error found; Minor warning: 46	main	Same color for background-color and color |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| assets | contactForm.js | ![screenshot](documentation/js_valid_contact.png) |
+| assets | script.js | ![screenshot](documentation/js_valid_script.png) |

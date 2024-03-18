@@ -190,3 +190,68 @@ I have used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefr
 ![screenshot](documentation/desktop_wireframe_facts.png)
 ![screenshot](documentation/desktop_wireframe_contact.png)
 </details>
+
+## Features
+
+### Existing Features
+
+#### The Home Page
+The Home Page is the first contact users will encounter when visiting this website. The page appears with the title welcoming users to the website. Also, there are three buttons that leads users to the Rules page, the Facts page, and the Contact page. [Click here to view the home page](https://robizman.github.io/guess-indian-sign-lang-alphabet/index.html)
+
+![screenshot](documentation/features_home.png)
+
+#### Header
+
+At the top of the website is the header appears the name of the website.
+
+![screenshot](documentation/features_header.png)
+
+#### Footer
+
+The footer is at the bottom of the website appears the copyright message.
+
+![screenshot](documentation/features_footer.png)
+
+#### The Rules page
+
+The Rules page explains the rules of the game. There are two buttons that leads users back to the Home page or continue to the Game page to start the game. [Click here to view the Rules page](https://robizman.github.io/guess-indian-sign-lang-alphabet/rules.html)
+
+![screenshot](documentation/features_rules.png)
+
+#### The Game page
+
+The Game page is where the user can play the game. The top of the box container consists of the current question number, the countdown timer of 15 seconds, and the X button to quit the game. In addition, the image appears in the centre of the box container, which shows ISL fingerspelling alphabet for users to guess. At the bottom of the box container consists of four answer buttons for users to choose one of four buttons. Once user choose their answer, it will appear a green colour to indicate that this is a correct answer. Otherwise, it would appear a red colour to indicate that this is a wrong answer, and a green colour to show which answer was correct. Then, the next button will appear to allow users to move to the next question. Upon the completion of the game, the result container will appear and give users choice to restart the game or quit to the home page. The game quiz was also made for responsive across different screen sizes. [Click here to view the Game page](https://robizman.github.io/guess-indian-sign-lang-alphabet/game.html)
+
+![screenshot](documentation/features_game.png)
+![screenshot](documentation/features_game_correct.png)
+![screenshot](documentation/features_game_incorrect.png)
+![screenshot](documentation/features_game_result.png)
+
+- Tablet version
+
+![screenshot](documentation/features_game_tablet.png)
+
+- Mobile version
+
+![screenshot](documentation/features_game_mobile.png)
+
+#### The Facts page
+
+The Facts page features a short list of facts about ISL. There are two buttons that take users back to the home page or take users to the external link (Indian Sign Language Research and Training Centre) for more ISL learning resources. [Click here to view the Facts page](https://robizman.github.io/guess-indian-sign-lang-alphabet/facts.html)
+
+![screenshot](documentation/features_facts.png)
+
+#### The Contact page
+
+The Contact page features a contact form for users to input their first name, surname, email address, and message. This page enables users to contact the website's owner directly. Also, there is a button that users need to click to send their form to the website's owner. Once a user submits the contact form, the confirmation container to confirm that their contact form was submitted successfully. The users will be redirected to the home page automatically after 10 seconds. [Click here to view the Contact page](https://robizman.github.io/guess-indian-sign-lang-alphabet/contact.html)
+
+![screenshot](documentation/features_contact.png)
+![screenshot](documentation/features_contact_thankyou.png)
+
+### Future features
+
+- Offers three different levels of difficult - easy (10 questions), medium (18 questions), and hard (26 questions).
+- The dark mode toggle shall be implemented on the website to give users an option to enable a dark mode on this website.
+- Add fingerspelling numbers to the game quiz.
+- Add basic signs to the game quiz.
+- Create visual appealing modals to reduce number of pages needed to go through.
